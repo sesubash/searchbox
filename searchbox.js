@@ -1,7 +1,7 @@
 /*
  * Subash selvaraj 2014
  * http://subashflash.blogspot.in/
- * https://github.com/sesubash/Javascript-Image-Resizer
+ * https://github.com/sesubash/searchbox
  */
 
 (function ($) {
