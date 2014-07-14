@@ -66,17 +66,15 @@
             $inputWrapper.css("top", -obj.height()/2);
 
             // prevent the search wrapper from closing it when clickon the input field
-			$input.on("click", function(e){
-			    e.preventDefault();
-			    e.stopPropagation();
-			});
+            $input.on("click", function(e){
+                e.preventDefault();
+                e.stopPropagation();
+            });
 
             // close the input wrapper on clicking anywhere else other than input box
-			$(document).on("click",function(){
-			    $parent.hasClass("active") ?  $parent.removeClass("active") : "";
-			});
-
+            $(document).on("click",function(){
+                $parent.hasClass("active") ?  $parent.removeClass("active") : "";
+            });
         });
-	};
-
+    };
 })(jQuery);
