@@ -1,0 +1,9 @@
+/**
+ * Author      : Subash Selvaraj
+ * Version     : 1.0
+ * website     : http://subashselvaraj.com/
+ * Plugin url  : https://github.com/sesubash/searchbox
+ * Created date: 14-07-2014
+ * Last updated: 08-10-2014
+ */
+.searchbox-wrapper .search{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNQTFRFU1NT9fX1lJSUXl5e1dXVfn5+c3Nz6urqv7+/tLS0iYmJqampn5+fysrK39/faWlp////Vi4ZywAAABF0Uk5T/////////////////////wAlrZliAAABLklEQVR42rSWWRbDIAhFHeOUtN3/ags1zaA4cHrKZ8JFRHwoXkwTvwGP1Qo0bYObAPwiLmbNAHBWFBZlD9j0JxflDViIObNHG/Do8PRHTJk0TezAhv7qloK0JJEBh+F8+U/hopIELOWfiZUCDOZD1RADOQKA75oq4cvVkcT+OdHnqqpQCITWAjnWVgGQUWz12lJuGwGoaWgBKzRVBcCypgUkOAoWgBX/L0CmxN40u6xwcIJ1cOzWYDffp3axsQOyvdkXiH9FKRFwPRHYZUaXMgPLeiW7QhbDRciyLXJaKheCuLbiVoqx1DVRyH26yb0hsuoOFEPsoz+BVE0MRlZNjGZcRQyHYkmMp2hBTIzdkzCTc/pLqOnBrk7/yZdAOq/q5NPBH1f7x7fGP4C3AAMAQrhzX9zhcGsAAAAASUVORK5CYII=) center center no-repeat;background-size:100%;height:20px;width:20px;cursor:pointer}.searchbox-wrapper .input-wrapper{position:absolute;border:none;background-color:#FFF;z-index:100;width:0;transition:width .5s ease;-webkit-transition:width .5s ease;-moz-transition:width .5s ease}.searchbox-wrapper.active .input-wrapper{box-shadow:0 2px 6px rgba(0,0,0,.15);padding:5px;width:150px}.searchbox-wrapper.active .search-box{box-shadow:6px 0 6px -6px rgba(51,51,51,.2),-6px 0 6px -6px rgba(51,51,51,.2),inset 0 13px 13px -13px rgba(51,51,51,.1);position:relative;left:0;top:0}.searchbox-wrapper input[type=text]{display:none}.searchbox-wrapper.active input[type=text]{width:100%;display:block}

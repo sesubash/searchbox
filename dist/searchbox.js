@@ -1,5 +1,6 @@
 /*
  * Author      : Subash Selvaraj
+ * Version     : 1.0
  * website     : http://subashselvaraj.com/
  * Plugin url  : https://github.com/sesubash/searchbox
  * Created date: 14-07-2014
