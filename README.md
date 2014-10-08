@@ -16,4 +16,4 @@ How to use
       position:&nbsp;&nbsp;"right"<br>
   });</i>
   
-<a href="http://jsfiddle.net/sesubash/Lw3CN/embedded/result/">Demo</a>
+<a href="http://jsfiddle.net/Lw3CN/18/embedded/result/">Demo</a>
