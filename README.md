@@ -13,7 +13,14 @@ How to use
       &nbsp;&nbsp;&nbsp;&nbsp;name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"search",<br>
       &nbsp;&nbsp;&nbsp;&nbsp;method:&nbsp;&nbsp;&nbsp;"POST",<br>
       &nbsp;&nbsp;&nbsp;&nbsp;url:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"someurl.php",<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;position:&nbsp;&nbsp;"right"<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;position:&nbsp;&nbsp;"right",<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;ajax:&nbsp;&nbsp;true,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;&nbsp;function(success){<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;alert(success);<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;},<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;error:&nbsp;&nbsp;function(error){<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;alert(error);<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;}<br>
   });</i>
   
 <a href="http://jsfiddle.net/Lw3CN/18/embedded/result/">Demo</a>
