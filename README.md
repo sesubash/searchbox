@@ -14,6 +14,7 @@ How to use
       &nbsp;&nbsp;&nbsp;&nbsp;method:&nbsp;&nbsp;&nbsp;"POST",<br>
       &nbsp;&nbsp;&nbsp;&nbsp;url:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"someurl.php",<br>
       &nbsp;&nbsp;&nbsp;&nbsp;position:&nbsp;&nbsp;"right"<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;ajax:&nbsp;&nbsp;true<br>
       &nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;&nbsp;function(success){<br>
       &nbsp;&nbsp;&nbsp;&nbsp;alert(success);<br>
       &nbsp;&nbsp;&nbsp;&nbsp;},<br>
