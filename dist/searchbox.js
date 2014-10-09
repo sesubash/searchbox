@@ -4,7 +4,7 @@
  * website     : http://subashselvaraj.com/
  * Plugin url  : https://github.com/sesubash/searchbox
  * Created date: 14-07-2014
- * Last updated: 08-10-2014
+ * Last updated: 09-10-2014
  */
 
 //=====================================================================================
@@ -42,30 +42,33 @@
 //     method:"POST",
 //     url:"",
 //     ajax: true,
-//     position:"right",
-//     success: function(success){
-//         alert(success);
-//     },
-//     error: function(error){
-//         alert(error);
+//     placement:"right",
+//     ajax: true,
+//     placement:"left",
+//     ajaxOptions:{
+//        success: function(success){
+//            alert(success);
+//        },
+//        error: function(error){
+//            alert(error);
+//       }
 //     }
 //  });
 //        
 //      
 //  options:
-//      method  : HTTP method ('POST' or 'GET' etc.,)
-//      name    : Input field name
-//      ajax    : true or false
-//      url     : url to submit
-//      position: left  or right
-//      success : success call back of ajax (applicable only if ajax parameter is true)
-//      error   : error call back of ajax (applicable only if ajax parameter is true)
+//      method      : HTTP method ('POST' or 'GET' etc.,)
+//      name        : Input field name
+//      ajax        : true or false
+//      url         : url to submit
+//      placement    : left  or right
+//      ajaxOptions : ajaxOptions (applicable only if ajax parameter is true)
 //
 //=======================================================================================
 
 // Demo:
 // -----
-//  http://jsfiddle.net/Lw3CN/18/embedded/result/
+//  http://jsfiddle.net/Lw3CN/24/embedded/result/
 //  
 // ====================================================
 // 
@@ -94,18 +97,10 @@
         searchbox.onSubmit = function(event){
             var data = $(this).serialize();
 
-            var ajaxOptions = {
-                url: searchbox.settings.url,
-                method: searchbox.settings.method,
-                data: data,
-            };
-
-            ( (searchbox.settings.success != undefined) && (typeof searchbox.settings.success === 'function') ) ? 
-                (ajaxOptions.success = searchbox.settings.success) : '';
-
-            ( (searchbox.settings.error != undefined) && (typeof searchbox.settings.error === 'function') ) ? 
-                (ajaxOptions.error = searchbox.settings.error) : '';
-
+            var ajaxOptions        = searchbox.settings.ajaxOptions;
+                ajaxOptions.url    = searchbox.settings.url;
+                ajaxOptions.method = searchbox.settings.method;
+                ajaxOptions.data   =  data;           
 
             $.ajax(ajaxOptions);
 
@@ -135,8 +130,8 @@
             });
 
             // set the postion of wrapper based on the option
-            if(searchbox.settings.position !== "undefined"){
-                switch(searchbox.settings.position){
+            if(searchbox.settings.placement !== "undefined"){
+                switch(searchbox.settings.placement){
                     case "right":
                                 $inputWrapper.css("left", obj.width());
                                 break;
@@ -144,11 +139,11 @@
                                 $inputWrapper.css("right", obj.width());
                                 break;
                 }
-            }else{// by default set the position of wrapper to the right side of search icon
+            }else{// by default set the placement of wrapper to the right side of search icon
                 $inputWrapper.css("left", obj.width());
             }
 
-            // adjust the vertical position of wrapper
+            // adjust the vertical placement of wrapper
             $inputWrapper.css("top", -obj.height()/2);
 
             // prevent the search wrapper from closing it when clickon the input field

@@ -15,12 +15,16 @@ How to use
       &nbsp;&nbsp;&nbsp;&nbsp;url:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"someurl.php",<br>
       &nbsp;&nbsp;&nbsp;&nbsp;position:&nbsp;&nbsp;"right",<br>
       &nbsp;&nbsp;&nbsp;&nbsp;ajax:&nbsp;&nbsp;true,<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;&nbsp;function(success){<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;alert(success);<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;},<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;error:&nbsp;&nbsp;function(error){<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;alert(error);<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;ajaxOptions:&nbsp;&nbsp;{<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;&nbsp;function(success){<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(success);<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;error:&nbsp;&nbsp;function(error){<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(error);<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
       &nbsp;&nbsp;&nbsp;&nbsp;}<br>
   });</i>
-  
-<a href="http://jsfiddle.net/Lw3CN/18/embedded/result/">Demo</a>
+
+TODO: 
+    1. Add option to make position of the serachbox as inline, right now it is absolute.
+<a href="http://jsfiddle.net/Lw3CN/24/embedded/result/">Demo</a>
