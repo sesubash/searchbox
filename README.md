@@ -27,4 +27,5 @@ How to use
 
 TODO: 
     1. Add option to make position of the serachbox as inline, right now it is absolute.
+<br>
 <a href="http://jsfiddle.net/Lw3CN/24/embedded/result/">Demo</a>
