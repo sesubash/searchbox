@@ -3,6 +3,10 @@ searchbox
 
 Jquery plugin for expandable search input.
 
+Installation using bower:
+========================
+bower install jquery-searchbox <br>
+
 How to use
 ==========
 
